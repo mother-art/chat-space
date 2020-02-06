@@ -23,8 +23,9 @@ Things you may want to cover:
 
 * ...
 
-##### DB設計
 
+# DB設計
+--------------------
 ## usersテーブル
 |Column|Type|Options|
 |------|----|-------|
