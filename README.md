@@ -33,27 +33,34 @@ Things you may want to cover:
 |e-mail|text|null: false, unique: true|
 |password|text|null: false|
 |image|file| |
+## Associarion
+- has_many :messages
+- has_many :groups_users
 
 ## groupsテーブル
 |Column|Type|Option|
 |------|----|------|
 |group_name|text|null: false|
+## Association
+- has_many :messages
+- has_many :group_users
 
 ## messagesテーブル
 |Column|Type|Option|
-|------|----|------|
+|------|----|------| 
 |massage|text|null: false|
 |image|file| |
 |user_id|integer|null: false, foreign_key: true|
 |group_id|integer|null: false, foreign_key: true|
+## Association
+- belongs_to :user
+- belongs_to :group
 
 ## groups_usersテーブル
 |Column|Type|Options|
 |------|----|-------|
 |user_id|integer|null: false, foreign_key: true|
 |group_id|integer|null: false, foreign_key: true|
-
 ## Association
 - belongs_to :group
 - belongs_to :user
-- has_many_to :messages
