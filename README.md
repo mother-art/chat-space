@@ -32,7 +32,6 @@ Things you may want to cover:
 |name|string|null: false|
 |e-mail|text|null: false, unique: true|
 |password|text|null: false|
-|image|string| |
 ## Associarion
 - has_many groups, through: groups_users
 - has_many :messages
@@ -41,7 +40,7 @@ Things you may want to cover:
 ## groupsテーブル
 |Column|Type|Option|
 |------|----|------|
-|group_name|text|null: false|
+|name|string|null: false|
 ## Association
 - has_many :users, through: groups_users
 - has_many :messages
