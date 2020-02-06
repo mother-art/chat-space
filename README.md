@@ -29,11 +29,12 @@ Things you may want to cover:
 ## usersテーブル
 |Column|Type|Options|
 |------|----|-------|
-|name|text|null: false|
+|name|string|null: false|
 |e-mail|text|null: false, unique: true|
 |password|text|null: false|
-|image|file| |
+|image|string| |
 ## Associarion
+- has_many groups, through: groups_users
 - has_many :messages
 - has_many :groups_users
 
@@ -42,14 +43,15 @@ Things you may want to cover:
 |------|----|------|
 |group_name|text|null: false|
 ## Association
+- has_many :users, through: groups_users
 - has_many :messages
 - has_many :group_users
 
 ## messagesテーブル
 |Column|Type|Option|
 |------|----|------| 
-|massage|text|null: false|
-|image|file| |
+|message|text| |
+|image|string| |
 |user_id|integer|null: false, foreign_key: true|
 |group_id|integer|null: false, foreign_key: true|
 ## Association
