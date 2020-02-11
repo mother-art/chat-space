@@ -1,6 +1,9 @@
 @import "font-awesome-sprockets";
 @import "font-awesome";
 @import "reset";
+@import "config/colors.scss";
+@import "modules/user";
 @import "mixin/display-center";
 @import "config/variables";
 @import "modules/messages";
+@import "modules/flash.scss";
