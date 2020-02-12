@@ -73,7 +73,7 @@
             color: #999999;
           }
         }
-        &__text {
+        &__content {
           font-size: 14px;
           color: #434A54;
         }
@@ -83,9 +83,8 @@
       height: 90px;
       padding: 20px 40px;
       background-color: #d2d2d2;
-      .new-message {
+      .new_message {
         display: flex;
-      }
         .input-box {
           position: relative;
           width: 100%;
@@ -117,6 +116,7 @@
           cursor: pointer;
           @include display-center
         }
+      }
     }
   }
 
