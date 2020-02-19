@@ -27,7 +27,7 @@ timeout 60
 preload_app true
 GC.respond_to?(:copy_on_write_friendly=) && GC.copy_on_write_friendly = true
 
-check_client_connection false
+check_client_connection falsebundle exec cap production deploy
 
 run_once = true
 
