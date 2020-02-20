@@ -53,6 +53,7 @@ $('#new_message').on('submit', function(e){
    contentType: false
  })
   .done(function(data){
+    console.table(data)
     var html = buildHTML(data);
     $('.submit-btn').prop('disabled', false);
     $('.messages').append(html);      
